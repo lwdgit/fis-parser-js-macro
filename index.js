@@ -47,9 +47,6 @@ function parseJs(code, define) {
                 var _promise = condition.replace(/^(elseif|else if|\/if|if|else)(.*)/i, function() {
                     var bool = eval(arguments[2]);
                     switch (arguments[1]) {
-                    case '=':
-                        return true;
-                        break;
                     case 'if':
                         promise.push(!!bool);
                         return promise.getState() && !!bool;
