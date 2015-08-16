@@ -42,7 +42,7 @@ function parseJs(code, define) {
             //暂不支持自定义openTag和closeTag
             condition = condition.replace(/(^\{\{|\}\}$)/g, '').trim();
             if (condition.indexOf('=') === 0) {
-                return promise.getState(true) ? eval(condition.substring(1)) : '';
+                return promise.getState(true) ? eval('define.' + condition.substring(1)) : '';
             } else {
                 var _promise = condition.replace(/^(elseif|else if|\/if|if|else)(.*)/i, function() {
                     var bool = eval(arguments[2]);
