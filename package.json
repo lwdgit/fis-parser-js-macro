@@ -1,0 +1,25 @@
+{
+  "name": "fis-parser-js-macro",
+  "version": "1.0.1",
+  "description": "A simple js macro for fis & fis3",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwdgit/fis-parser-js-macro.git"
+  },
+  "keywords": [
+    "js-macro"
+  ],
+  "author": "lwdgit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lwdgit/fis-parser-js-macro/issues"
+  },
+  "homepage": "https://github.com/lwdgit/fis-parser-js-macro#readme"
+}
